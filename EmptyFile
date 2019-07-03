@@ -1,7 +1,7 @@
-# USER:            christia
+# USER:            mheideman
 # DESCRIPTION:     Direct Imaging Table Update
-# FILENAME:        
-# DATE:            
+# FILENAME:        .dat
+# DATE:            2019-
 #                                    
 # Addition of direct imaging values
 #                                    
@@ -17,8 +17,10 @@ dec_str                           |\ # Dec [sexagesimal]
 #
 # Imaging Columns
 #
-imdeltmag                       | imdeltmagerr		| imdeltmaglim        |\			# "imdeltmag", planet-host magnitude difference [mag]
-imflxratio                      | imflxratioerr1        | imflxratioerr2       | imflxratiolim     |\ 	# "imflxratio", planet/host flux ratio
+imdeltjmag                 | imdeltjmagerr		       | imdeltjmaglim                0 |\			# "imdeltjmag", planet-host magnitude difference [mag]
+imdelthmag                 | imdelthmagerr		       | imdelthmaglim                0 |\			# "imdelthmag", planet-host magnitude difference [mag]
+imdeltkmag                 | imdeltkmagerr		       | imdeltkmaglim                0 |\			# "imdeltkmag", planet-host magnitude difference [mag]
+imdeltlpmag                | imdeltlpmagerr		       | imdeltlpmaglim               0 |\			# "imdeltlpmag", planet-host magnitude difference [mag]
 imangsep                        | imangseperr1          | imangseperr2         | imangseplim       |\  # "imangsep", star-planet angular separation [arcsec]
 imsep                           | imseperr1             | imseperr2            | imseplim          |\  # "imsep", projected star-planet separation [AU]
 imtruesep                       | imtrueseperr1         | imtrueseperr2        | imtrueseplim      |\  # "imtruesep", true star-planet separation [AU] 
@@ -60,11 +62,11 @@ image		              | imageerr1	       | imageerr2	      | imagelim	   |\ # "im
 #
 # Model Columns
 #
-implstype			|\ # "implstype", planet spectral type
+implstype		               	|\ # "implstype", planet spectral type
 implmass                     | implmasserr1          | implmasserr2         | implmasslim       |\ # "implmass", planet mass [Jupiter mass]
 impltemp                     | impltemperr1          | impltemperr2         | impltemplim       |\ # "impltemp", planet temp [K]
 implradius                   | implradiuserr1        | implradiuserr2       | implradiuslim     |\ # "implradius", planet radius [Jupiter radii]
-immodel		     Cloud-free	|\ # "immodel", description of model ##Reference that the model is drawn from.
+immodel		          	|\ # "immodel", description of model ##Reference that the model is drawn from.
 immodeldef		      0 |\ # "immodeldef" (1=yes, 0=no)
 #
 # Internal Counter
